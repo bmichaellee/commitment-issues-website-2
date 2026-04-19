@@ -1,0 +1,12 @@
+{
+  "sectionKicker": "05 · Five idiots",
+  "sectionTitle": "The band,\nsuch as it is.",
+  "sectionMeta": "Five members · One rehearsal space · Above a pho place",
+  "members": [
+    { "name": "BLT",     "role": "Vocals",         "tag": "frontperson" },
+    { "name": "Brandon", "role": "Guitar / Vox",   "tag": "six-string · backup howler" },
+    { "name": "Barry",   "role": "Guitar / Vox",   "tag": "six-string · backup howler" },
+    { "name": "Frank",   "role": "Bass",           "tag": "low end · louder than he admits" },
+    { "name": "Chico",   "role": "Drums",          "tag": "tempo · therapy" }
+  ]
+}
