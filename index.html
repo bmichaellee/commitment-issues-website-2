@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>Commitment Issues — Virginia Beach Rock and/or Roll</title>
   <meta name="description" content="Commitment Issues — a 90s/2000s alt-rock cover band based in Virginia Beach, VA. Weddings, dive bars, backyard 40ths." />
 
@@ -16,8 +16,8 @@
   <!-- SVG chalk displacement filter — referenced by CSS filter:url(#...) -->
   <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute">
     <defs>
-      <!-- hero wordmark chalk filter -->
-      <filter id="ci-chalk-hero" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
+      <!-- hero wordmark chalk filter — generous margins so displacement doesn't clip -->
+      <filter id="ci-chalk-hero" x="-8%" y="-15%" width="116%" height="130%" color-interpolation-filters="sRGB">
         <feTurbulence type="turbulence" baseFrequency="0.032 0.028" numOctaves="4" seed="3" result="noise"/>
         <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
         <feGaussianBlur in="displaced" stdDeviation="0.4" result="blurred"/>
@@ -52,10 +52,10 @@
     Promise.all([
       // fetch all JSON content files
       ...CONTENT_FILES.map(name =>
-        fetch(`content/${name}.json`).then(r => r.json()).then(data => ['json:' + name, data])
+        fetch(`content/${name}.json?v=` + Date.now()).then(r => r.json()).then(data => ['json:' + name, data])
       ),
       // fetch the JSX source
-      fetch('js/main.js').then(r => r.text()).then(src => ['__jsx__', src]),
+      fetch('js/main.js?v=' + Date.now()).then(r => r.text()).then(src => ['__jsx__', src]),
     ]).then(entries => {
       const map = Object.fromEntries(entries);
       const jsxSrc = map['__jsx__'];

@@ -22,7 +22,8 @@ function Topbar() {
     <header className="topbar">
       <div className="mark">
         <span className="dot" aria-hidden="true"></span>
-        <span>Commitment Issues · {h.established}</span>
+        <span className="mark-full">Commitment Issues · {h.established}</span>
+        <span className="mark-short">{h.shortName} · {h.established}</span>
       </div>
       <nav>
         <a href="#shows">Shows</a>
@@ -33,7 +34,7 @@ function Topbar() {
         <a href="#connect">Connect</a>
       </nav>
       <div className="right">
-        <span>VA · 757</span>
+        <span className="va-label">VA · 757</span>
         <a className="cta" href="#connect">Book us</a>
       </div>
     </header>
@@ -46,8 +47,9 @@ function Hero() {
   const h = C.hero;
   const nextShow = C.shows.shows.find(s => s.status !== "PRIVATE") || C.shows.shows[0];
   const n = nextShow ? fmtDate(nextShow.date) : null;
-
+  const wordmarkRef = React.useRef(null);
   const taglineParts = h.tagline.split(" and/or ");
+  useFitText(wordmarkRef, []);
 
   return (
     <section className="hero container" id="top">
@@ -61,7 +63,7 @@ function Hero() {
       </div>
 
       <div className="hero-logo-wrap">
-        <h1 className="hero-wordmark" aria-label="Commitment Issues">
+        <h1 className="hero-wordmark" ref={wordmarkRef} aria-label="Commitment Issues">
           <span className="line">Commitment</span>
           <span className="line">Issues<span className="dot-accent">.</span></span>
         </h1>
@@ -227,8 +229,10 @@ function Setlist() {
             return (
               <div className="song" key={i}>
                 <span className="num">{String(i + 1).padStart(2, "0")}</span>
-                <span className="artist">{artist}</span>
-                <span className="title">— {title}</span>
+                <span className="song-body">
+                  <span className="artist">{artist}</span>
+                  <span className="title" data-title={title}>{title}</span>
+                </span>
               </div>
             );
           })}
@@ -420,6 +424,31 @@ function Footer() {
       </div>
     </footer>
   );
+}
+
+// ---- fit wordmark to container width ----
+
+function useFitText(ref, deps) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const fit = () => {
+      el.style.fontSize = '';
+      const container = el.parentElement.clientWidth;
+      // measure the widest line (first span = "COMMITMENT")
+      const line = el.querySelector('.line');
+      if (!line) return;
+      const natural = line.scrollWidth;
+      if (natural > container) {
+        const ratio = container / natural;
+        const current = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = (current * ratio * 0.97) + 'px';
+      }
+    };
+    fit();
+    window.addEventListener('resize', fit);
+    return () => window.removeEventListener('resize', fit);
+  }, deps);
 }
 
 // ---- App ----
