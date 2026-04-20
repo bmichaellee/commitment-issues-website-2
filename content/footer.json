@@ -1,0 +1,46 @@
+{
+  "logo": "Commitment\nIssues.",
+  "descriptor": "A millennial alt-rock cover band · Virginia Beach, VA",
+  "copyright": "© 2026 · All songs belong to someone else",
+  "siteLinksLabel": "The site",
+  "siteLinks": [
+    {
+      "label": "Shows",
+      "href": "#shows"
+    },
+    {
+      "label": "Video",
+      "href": "#video"
+    },
+    {
+      "label": "Setlist",
+      "href": "#setlist"
+    },
+    {
+      "label": "Band",
+      "href": "#band"
+    },
+    {
+      "label": "Press",
+      "href": "#press"
+    }
+  ],
+  "contactLinksLabel": "Talk to us",
+  "contactLinks": [
+    {
+      "label": "book@commitmentissues.band",
+      "href": "mailto:book@commitmentissues.band"
+    },
+    {
+      "label": "(757) 555-0142",
+      "href": "tel:7575550142"
+    },
+    {
+      "label": "All socials ↓",
+      "href": "#connect"
+    }
+  ],
+  "bottomLeft": "Built on a dare · 2026",
+  "bottomCenter": "Chalk logo by Melanie · maintained every leap year",
+  "bottomRight": "No commitment implied"
+}

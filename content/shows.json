@@ -1,0 +1,67 @@
+{
+  "sectionKicker": "02 · On tour",
+  "sectionTitle": "Upcoming\nshows.",
+  "sectionMeta": "updated weekly",
+  "shows": [
+    {
+      "date": "2026-05-02",
+      "dow": "SAT",
+      "venue": "Shaka's Live",
+      "city": "Virginia Beach, VA",
+      "note": "w/ Boardwalk Static, Dead Cassette",
+      "price": "$12",
+      "status": "ON SALE",
+      "url": "#"
+    },
+    {
+      "date": "2026-05-16",
+      "dow": "SAT",
+      "venue": "Scandals Live",
+      "city": "Norfolk, VA",
+      "note": "Late set · 10:30",
+      "price": "$10",
+      "status": "ON SALE",
+      "url": "#"
+    },
+    {
+      "date": "2026-06-06",
+      "dow": "SAT",
+      "venue": "Peabody's",
+      "city": "Virginia Beach, VA",
+      "note": "21+ · doors 9",
+      "price": "$10",
+      "status": "ON SALE",
+      "url": "#"
+    },
+    {
+      "date": "2026-06-20",
+      "dow": "SAT",
+      "venue": "The NorVa (Back Bar)",
+      "city": "Norfolk, VA",
+      "note": "Private — wedding",
+      "price": "—",
+      "status": "PRIVATE",
+      "url": null
+    },
+    {
+      "date": "2026-07-04",
+      "dow": "SAT",
+      "venue": "Neptune Festival Stage",
+      "city": "Virginia Beach, VA",
+      "note": "Free · outdoors",
+      "price": "FREE",
+      "status": "ON SALE",
+      "url": "#"
+    },
+    {
+      "date": "2026-07-18",
+      "dow": "SAT",
+      "venue": "Elevation 27",
+      "city": "Virginia Beach, VA",
+      "note": "w/ The Cover Charge",
+      "price": "$15",
+      "status": "FEW LEFT",
+      "url": "#"
+    }
+  ]
+}

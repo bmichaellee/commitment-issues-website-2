@@ -1,0 +1,72 @@
+{
+  "sectionKicker": "07 · Find us / hire us",
+  "sectionTitle": "Connect.",
+  "sectionMeta": "8 places online · 1 inbox that matters",
+  "socials": [
+    {
+      "name": "Instagram",
+      "handle": "@commitmentissuesva",
+      "url": "#"
+    },
+    {
+      "name": "TikTok",
+      "handle": "@commitmentissuesva",
+      "url": "#"
+    },
+    {
+      "name": "YouTube",
+      "handle": "/@commitmentissuesva",
+      "url": "#"
+    },
+    {
+      "name": "Spotify",
+      "handle": "Commitment Issues",
+      "url": "#"
+    },
+    {
+      "name": "Bandcamp",
+      "handle": "commitmentissues.bc",
+      "url": "#"
+    },
+    {
+      "name": "SoundCloud",
+      "handle": "/commitmentissuesva",
+      "url": "#"
+    },
+    {
+      "name": "Facebook",
+      "handle": "/commitmentissuesva",
+      "url": "#"
+    },
+    {
+      "name": "X / Twitter",
+      "handle": "@commitissuesva",
+      "url": "#"
+    }
+  ],
+  "booking": {
+    "kicker": "Booking",
+    "headline": "Got a stage?\nWe'll show up.\nProbably.",
+    "accentWord": "Probably.",
+    "lead": "Weddings, dive bars, backyard 40ths, corporate parties where we're contractually required to skip the Rage songs.",
+    "email": "book@commitmentissues.band",
+    "phone": "(757) 555-0142",
+    "location": "Virginia Beach, VA"
+  },
+  "marquee": [
+    "Book us",
+    "·",
+    "Weddings",
+    "·",
+    "Dive bars",
+    "·",
+    "40ths",
+    "·",
+    "Backyards",
+    "·",
+    "Corporate",
+    "·",
+    "(the SoaD songs are non-negotiable)",
+    "·"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "sectionKicker": "05 · Five american idiots",
+  "sectionTitle": "The band,\nsuch as it is.",
+  "sectionMeta": "Five dudes · One rehearsal space · Allegedly utilized",
+  "members": [
+    {
+      "name": "BLT",
+      "role": "Vocals",
+      "tag": "doesn't need a mic"
+    },
+    {
+      "name": "Brandon",
+      "role": "Guitar / Vox",
+      "tag": "disregards the set list"
+    },
+    {
+      "name": "Barry",
+      "role": "Guitar / Vox",
+      "tag": "angel-winging it"
+    },
+    {
+      "name": "Frank",
+      "role": "Bass",
+      "tag": "ph.d. in low-end"
+    },
+    {
+      "name": "Chico",
+      "role": "Drums / Vox",
+      "tag": "doubles as a crooner"
+    }
+  ]
+}
